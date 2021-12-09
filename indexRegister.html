@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FutureLearn</title>
+	<link rel="stylesheet" href="styleRegister.css">
+  <!-- <script type="text/javascript" src="/js/jquery/jquery.js"></script> -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://assets.futurelearn.com/packs/app/assets/images/favicon-fa8a2c224a848f933e60d4b730435649.ico" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-57x57-7876d097e22b2bedaf6f350171bb4418.png" sizes="57x57" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-114x114-8004283dd99c6f7e10c939c96c0071b5.png" sizes="114x114" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-72x72-be4d535ab60c93ce5082c663e12008e6.png" sizes="72x72" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-144x144-84c78958c65a66907156cf9eba1fd6e1.png" sizes="144x144" />
+</head>
+<body>
+	<div class="" id="main">
+		<!-- logo -->
+		<div class="add">
+			<div class="line__logo"><a href="index.html"><img src="https://assets.futurelearn.com/packs/app/assets/images/fl_logo-f9d7f37a61915a2fbf8a26cbb285fed0.svg" alt="FutureLearn" class="logo"></a></div>
+		</div>
+		<!-- all -->
+		<div class="partSignIn">
+      <div class="requiredCaution" id="vError">
+				<div class="requiredCaution-section">
+					<div class="requiredCaution__icon">
+						<img src="https://img.icons8.com/ios/20/000000/error--v1.png"/>
+					</div>
+					<div class="requiredCaution_text">
+						<p>We couldn’t sign you in. Check your email address and password, then try again.</p>
+					</div>
+				</div>
+				<div class="tri"> </div>
+			</div>
+			<div class="signIn"> <!-- links 2 -->
+				<div class="tosignIn"> <!-- Sign IN  -->
+					<a href="indexSign.html">Sign in</a>
+				</div>
+				<div class="toregister"> <!-- Register -->
+					<a href="indexRegister.html">Register</a>
+				</div>
+			</div>
+
+
+			<form class="form" action="indexRegister.html" method="post">
+				<div class="inForm">
+          <div class="inForm__firstName-section">
+						<label class="inForm__labelText" for="firstName">First Name *</label>
+            <input id="firstName" class="inForm__input firstName" type="text" name="firstName">
+            <label for="firstName" class="disap" id="error1">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in your first name</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+					<div class="inForm__lastName-section">
+						<label class="inForm__labelText" for="lastName">Last name or initial *</label>
+            <input id="lastName" class="inForm__input lastName" type="text" name="lastName">
+            <label for="lastName" class="disap" id="error2">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in your last name</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+					<div class="inForm__age-section">
+						<label class="inForm__labelText" for="age">Age *</label>
+            <select id="age" name="age" required="" class="inForm__select age">
+              <option selected="" value=""> </option>
+              <option value="18">18 or over</option>
+              <option value="17">17</option>
+              <option value="16">16</option>
+              <option value="15">15</option>
+              <option value="14">14</option>
+              <option value="13">13</option>
+              <option value="12">12 or under</option>
+            </select>
+            <label for="age" class="disap" id="error3">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in your age</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+          <div class="inForm__email-section">
+            <label class="inForm__labelText" for="email">Email adderss *</label>
+            <label class="inForm__labelText2" for="email">Please check your email address to make sure it's correct.</label>
+            <input id="email" class="inForm__input email" type="email" name="email">
+            <label for="email" class="disap" id="error4">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label requiredCaution__icon-label_email">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>That email address looks wrong. Please check and try again.; Fill in your email address</p>
+      					</div>
+      				</div>
+           </label>
+          </div>
+          <div class="inForm__password-section">
+						<label class="inForm__labelText" for="password">Choose a password (min. 10 characters) *</label>
+            <input id="password" class="inForm__input password" type="password" name="password">
+            <label for="password" class="disap" id="error5">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in a password</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+
+          <!-- button -->
+					<div class="inForm__register-button">
+						<button class="inform__button" type="button" onclick="add()" name="button"> <span class="inform__buttonSpan">Register</span></button>
+					</div>
+          <div class="inform__document">
+            <p class="inform__document-term">
+              By clicking Register I agree to FutureLearn’s
+              <!-- -->
+              <a href="/info/terms">Terms &amp; Conditions</a>
+              <!--target="blank" -->
+              and
+              <!-- -->
+              <a href="/info/terms/privacy-policy">Privacy Policy</a>, and I agree to abide by the
+              <!-- -->
+              <a href="/info/terms/code-of-conduct">Code of Conduct</a>
+            </p>
+          </div>
+				</div>
+			</form>
+      <!--  -->
+      <div class="divider-section"> <!-- LINE OR -->
+				<div class="divider" title="Or">
+				</div>
+			</div>
+      <div class="signInWith">
+				<div class="signInWith__facebook"> <!-- Facebook -->
+					<form class="buttonTo" method="post" action="">
+						<button class="buttonTo__facebook" type="submit"><img src="https://img.icons8.com/material/30/000000/facebook-f.png"/><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=719488314826415&kid_directed_site=0&app_id=719488314826415&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fclient_id%3D719488314826415%26redirect_uri%3Dhttps%253A%252F%252Fwww.futurelearn.com%252Fauth%252Ffacebook%252Fcallback%26response_type%3Dcode%26scope%3Duser_age_range%252Cemail%26state%3D6e7b536c4b1a0bd36d312573648e18fd61fb29138dcbf394%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Deca7210e-42ac-4bfc-8a68-3c89f9d73893%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.futurelearn.com%2Fauth%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D6e7b536c4b1a0bd36d312573648e18fd61fb29138dcbf394%23_%3D_&display=page&locale=ru_RU&pl_dbl=0">Register <span class="styleWith">using </span>Facebook</a></button>
+					</form>
+				</div>
+				<div class="signInWith__google"> <!-- Google -->
+					<form class="buttonTo" method="post" action="">
+						<button class="buttonTo__google" type="submit"><img src="https://img.icons8.com/fluency/30/000000/google-logo.png"/> <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=271759304704-tg8o4lkn1j195e1uph9c3c1vdt40g3ud.apps.googleusercontent.com&prompt=select_account&redirect_uri=https%3A%2F%2Fwww.futurelearn.com%2Fauth%2Fgoogle_oauth2%2Fcallback&response_type=code&scope=email%20profile&state=2d48e5a16ebfd304b490be0386de4185372888e16650faa2&flowName=GeneralOAuthFlow">Register <span class="styleWith">using </span>Google</a></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="javaRegister.js"></script>
+</body>

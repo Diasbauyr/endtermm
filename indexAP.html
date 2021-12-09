@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='scriptAP.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: rgba(149, 169, 220, 1.0);
+            background: -webkit-radial-gradient(top, rgba(149, 169, 220, 1.0), rgba(7, 9, 24, 1.0));
+            background: -moz-radial-gradient(top, rgba(149, 169, 220, 1.0), rgba(7, 9, 24, 1.0));
+            background: radial-gradient(to bottom, rgba(149, 169, 220, 1.0), rgba(7, 9, 24, 1.0));
+            letter-spacing: 1px;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(56, 55, 55);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: auto 100vh;
+            overflow: auto;
+        }
+        .title {
+            background: url("https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .title__text{
+          /* background-color: #de00a5; */
+          color: #fff;
+          text-align: center;
+          padding: 5px 0;
+          border-radius: 10px;
+        }
+
+        .listTable__title {
+          /* border-radius: 80%; */
+          padding: 5px 0;
+          margin: 10px;
+          color: black;
+          text-align: center;
+          border-bottom: 3px solid black;
+          /* border-top:  3px solid black; */
+        }
+
+        .listTable_button, .form__button_input{
+            background: url("https://t3.ftcdn.net/jpg/00/73/73/58/360_F_73735887_Fxhj4RSlEJEqAgStrky8EsWycAFSyAd3.jpg");
+            color: aliceblue;
+        }
+        .listTable_button:hover{
+            color: ivory;
+        }
+
+        .listTable, .form-section, .title, .form_div{
+            border-radius: 12px;
+        }
+        #hide_button{
+            font-size: 16px;
+            border-color: lightgray;
+            border-radius: 12px;
+        }
+       
+        .listTable {
+          background-color: #DCDCDC;
+        }
+        .form {
+          background-color: #DCDCDC;
+          padding:35px 5% 15px 10%;
+        }
+
+        .listTable-section {
+          padding: 30px;
+        }
+
+
+        .form__button_div {
+          margin-top: 10px;
+        }
+
+        .listTable_table {
+          width: 100%;
+          /* background-color: yellow; */
+        }
+
+        .form__firstname_input
+        ,.form__lastname_input
+        ,.form__age_input
+        ,.from__email_input
+        ,.from__password_input{
+          width: 80%;
+        }
+
+        .form__age_div > label {
+          margin-right: 70px;
+        }
+
+        .form__lastN_div > label {
+          margin-right: 5px;
+        }
+
+        .form__lastN_div > label {
+          margin-right: 5px;
+        }
+
+        .form__email_div > label {
+          margin-right: 53px;
+        }
+
+        .form__password_div > label {
+          margin-right: 20px;
+        }
+
+        input:focus{
+        	outline : 3px solid #2541fc;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="title">
+            <h1 class='title__text'>Add data</h1>
+        </div>
+        <div>
+        <div class="form-section">
+            <div class="form_div">
+                <form action="#" class="form" id='myform'>
+                    <div class="form__firstN_div">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" class='form__firstname_input'>
+                    </div>
+                    <div class="form__lastN_div">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class='form__lastname_input'>
+                    </div>
+                    <div class="form__age_div">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" class='form__age_input'>
+                    </div>
+                    <div class="form__email_div">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class='from__email_input'>
+                    </div>
+                    <div class="form__password_div">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class='from__password_input'>
+                    </div>
+
+                    <div class="form__button_div">
+                        <input type="submit" value='Add' class='form__button_input'>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="listTable">
+            <h3 class="listTable__title">My data</h3>
+            <div class="listTable-section">
+              <table class='listTable_table'>
+                  <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Age</th>
+                      <th>Email</th>
+                      <th>Password</th>
+                      <th>Action</th>
+                  </tr>
+                  <tbody id='tbody'>
+                  </tbody>
+             </table>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

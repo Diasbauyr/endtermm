@@ -1,0 +1,1409 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Europa, Helvetica Neue, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.main-header{
+    
+    position: relative;
+    width: 100%;
+}
+
+.main-header__line{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+
+}
+
+.linesub, .linecourse, .linefut{
+    background: white;
+    color: #de00a5;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+}
+
+.linesub:focus, .linecourse:focus, .linefut:focus{
+    background: #fafafa;
+    -webkit-box-shadow: -2px 0px 5px -2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: -2px 0px 5px -2px rgba(34, 60, 80, 0.2);
+box-shadow: -2px 0px 5px -2px rgba(34, 60, 80, 0.2);
+}
+
+.line__logo{
+    position: relative;
+    left: 15px;
+    width: 115px;
+    height: 40px;
+}
+.line-subject{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    cursor: pointer;
+    color: #de00a5;
+    margin-left: 180px;
+    height: 100px;
+}
+.linesub:hover, svg:hover{
+    color: #5000e2;
+    fill: #5000e2;
+    transition: .7s;
+    cursor: pointer;
+}
+.linecourse:hover, svg:hover{
+    color: #5000e2;
+    fill: #5000e2;
+    transition: .7s;
+    cursor: pointer;
+
+}
+.linefut:hover, svg:hover{
+    color: #5000e2;
+    fill: #5000e2;
+    transition: .7s;
+    cursor: pointer;
+
+}
+.line-course{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    cursor: pointer;
+    color: #de00a5;
+    margin-left: 10px;
+    height: 100px;
+
+
+}
+.line-future{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    cursor: pointer;
+    color: #de00a5;
+    margin-left: 10px;
+    height: 100px;
+
+
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    vertical-align: sub;
+    fill: #de00a5;
+    font-weight: 400;
+    transition: transform .3s;
+
+}
+.icon.active{
+    transform: rotate(180deg);
+}
+.line-tools-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -8px;
+    left: 180px;
+    width: 800px;
+    margin-left: 60px;
+}
+.line-tools-nav__search input{
+    position: relative;
+    right: -160px;
+    width: 320px;
+    height: 41px;
+    border: 1px solid rgb(211, 208, 208);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.line-tools-nav__search input:active{
+    border: 2px solid #5000e2;
+}
+.line-tools-nav__search-button{
+    position: relative;
+    top: 9px;
+    left: 115px;
+    width: 48.5px;
+    height: 41px;
+    cursor: pointer;
+    background: #de00a5;
+    border: 0;
+    transition: .6s;
+
+}
+
+.line-tools-nav__search input::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 5px;
+}
+
+.line-tools-nav__search-button svg{
+    position: relative;
+    top: 2px;
+    fill: white;
+}
+.line-tools-nav__search-button:hover{
+    background: #5000e2;
+    transition: .6s;
+}
+
+.line-tools-nav__register-sign{
+    position: relative;
+    top: 5px;
+    left: -4px;
+    width: 83px;
+    height: 42px;
+    background: #ffffff;
+    color: #de00a5;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .7s;
+
+}
+.line-tools-nav__register-reg{
+    position: relative;
+    top: 5px;
+    left: 6px;
+    width: 83px;
+    height: 42px;
+    background: #de00a5;
+    color: rgb(255, 245, 245);
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .7s;
+
+}
+.line-tools-nav__register-reg:hover{
+    background: #5000e2;
+    transition: .7s;
+}
+.line-tools-nav__register-sign:hover{
+    color: #5000e2;
+    transition: .7s; 
+}
+.line-tools-nav__register-sign:active{
+    border: 3px solid #5000e2;
+}
+
+/*================ subjects ==============*/
+.main-header__subjects{
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.2);
+    display: block;
+    width: 100%;
+    height: 750px;
+    background: #fafafa;
+    display: none;
+}
+.titles{
+    margin-left: 40px;
+}
+.subjects-row{
+    display: flex;
+    align-content: center;
+    position: relative;
+    left: 260px;
+}
+.subjects__column{
+    width: 700px;
+}
+
+.column__list{
+    list-style: none;
+    column-count: 2;
+    display: block;
+    
+}
+.subjects__column-list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.column-list__title h6{
+    position: relative;
+    top: -25px;
+    left: 12px;
+    margin-bottom: -10px;
+    font-size: 17px;
+    font-weight: 540;
+    color: #de00a5;
+}
+.column-list__title h6:hover{
+    color: blue;
+    transition: .7s;
+
+}
+.iconsub{
+    width: 25px;
+    font-weight: 300;
+}
+
+.column__list2{
+    list-style: none;
+}
+.subjects__column-list2{
+    margin-top: 10px;
+}
+.column-list2__block{
+    position: relative;
+    width: 500px;
+    border: 0.1px solid rgb(242, 243, 229);
+}
+.column-list2__block h5{
+    position: relative;
+    top: -10px;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgb(242, 243, 229);
+}
+.block__text{
+    position: relative;
+    top: -40px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    color: rgb(242, 243, 229);
+}
+.iconblock{
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    width: 30px;
+    font-weight: 300;
+    fill: white;
+}
+
+.column-list2__block.bore{
+    background-image:url("https://ugc.futurelearn.com/uploads/images/7f/60/7f60d382-adc0-4cd2-acf0-c0e566f9a8b1.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+
+}
+.column-list2__block.business{
+    background-image:url("https://ugc.futurelearn.com/uploads/images/67/5e/675ec0f4-ac8e-49ec-adb4-f810c6ef2b5a.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+
+}
+.column-list2__block.health{
+    background-image:url("https://ugc.futurelearn.com/uploads/images/fd/79/fd7932c2-abbe-4efc-ab69-11f73f15289b.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+
+}
+.column-list2__block.teaching{
+    background-image:url("https://ugc.futurelearn.com/uploads/images/b4/71/b47183c7-8671-4e65-bdba-4e27ae47f752.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+
+}
+.column-list2__block:hover{
+    transform: scale(1.01);
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* =================courses=============== */
+
+.main-header__courses{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: #fafafa;
+    overflow: hidden;
+    display: none;
+
+}
+
+.courses__row{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-gap: 1rem;
+    position: relative;
+    top: 40px;
+    left: 350px;
+    width: 1200px;
+
+}
+.row__block{
+    border: 1px solid white;
+    height: 150px;
+    background: white;
+}
+.row__block-title{
+    position: relative;
+    top: -5px;
+    left: 14px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    font-weight: 540;
+    color: #de00a5;
+    width: 120px;
+    line-height: 1.5;
+    transition: .5s;
+
+}
+.row__block-text{
+    position: relative;
+    top: -10px;
+    left: 14px;
+    width: 120px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+.row__block .row__block-title:hover{
+    color: blue;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.row__block.short{
+    background-image: url("https://assets.futurelearn.com/packs/app/assets/images/course_symbols/courses-on-white-a9ce9e3fa4d9b403e2c57527e389a0d9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 175px 55px;
+}
+.row__block.expert{
+    background-image: url("https://assets.futurelearn.com/packs/app/assets/images/course_symbols/experttracks-on-white-1ad100ff95fb560bd675f688fd1d66bc.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 174px 65px;
+}
+.row__block.program{
+    background-image: url("https://assets.futurelearn.com/packs/app/assets/images/course_symbols/programs-on-white-df33a03b652beb33c441da0757814cc8.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 175px 50px;
+}
+.row__block.online{
+    background-image: url("https://assets.futurelearn.com/packs/app/assets/images/course_symbols/degrees-on-white-e6a86b74d2a375da26a40ab7bc64387a.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 175px 40px;
+}
+
+/* =================FutureLearn=============== */
+.main-header__future{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: #fafafa;
+    overflow: hidden;
+    display: none;
+}
+.future__block h3{
+    margin-left: 40px;
+    font-size: 18px;
+}
+.futures__row{
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly   ;
+    position: relative;
+    left: 90px;
+}
+.futures__row li{
+    position: relative;
+    list-style: none;
+}
+.future-block__list a{
+    text-decoration: none;
+    color: #de00a5;
+    font-size: 18px;
+    font-weight: 540;
+    line-height: 1.5;
+}
+.future-block__list a:hover{
+    color: #5000e2;
+    text-decoration: none;
+
+}
+/* ===============Main page header================ */
+
+.main-page__header{
+    width: 100%;
+    display: flex;
+}
+.page-item__info{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 310px;
+    width: 660px;
+}
+.page-item__photo{
+    position: relative;
+    left: 440px;
+
+    display: block;
+}
+.info__title{
+    font-size: 47px;
+    line-height: 1.25;
+    color: #494749;
+    font-weight: 700;
+}
+.info__text{
+    position: relative;
+    left: 2px;
+    top: -10px;
+    font-size: 21.5px;
+    line-height: 1.5;
+    color: #3a343a;
+}
+.info__btn.btn1{
+    border: 1px solid #de00a5;
+    color: #de00a5;
+    background: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    width: 116px;
+    height: 42px;
+    position: relative;
+    top: -10px;
+}
+.info__btn.btn2{
+    background: #de00a5;
+    color: #ffffff;
+    border: 0;
+    width: 151px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 12px;
+    position: relative;
+    top: -10px;
+}
+.info__btn.btn1:hover{
+    border: 1px solid #5000e2;
+    color: #5000e2;
+    transition: 1s; 
+    cursor: pointer;
+}
+.info__btn.btn2:hover{
+    background: #5000e2;
+    transition: 1.5s; 
+    cursor: pointer;
+}
+
+/*================ main page organizations ================*/
+
+.main-page__organizations{
+    background: #fafafa;
+
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+}
+.organization__block{
+    position: relative;
+    top: -10px;
+    left: 330px;
+    display: flex;
+    align-items: center;
+}
+.organization__title{
+    font-size: 21px;
+    position: relative;
+    top: 5px;
+    left: 557px;
+    color: #3a343a;;
+}
+.organization__title a{
+    color: #de00a5;
+    text-decoration: none;
+    transition: .7s;
+
+}
+.organization__title a:hover{
+    color: #5000e2;
+    transition: .7s;
+}
+.organization__list img{
+    width: 105px;
+    margin-left: 33px;
+}
+
+
+/* =============== main-page__subscription ================ */
+
+.main-page__subscription{
+    display: flex;
+    width: 100vw;
+}
+.subscription__block1{
+    width: 50vw;
+    height: 300px;
+    background-image: url("https://ugc.futurelearn.com/uploads/images/94/6e/946ead26-8340-4e2d-abd0-006b9cf2161a.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.subscription__block2{
+    width: 50vw;
+    height: 300px;
+    background-image: url("https://ugc.futurelearn.com/uploads/images/78/07/78070483-d0c4-44c1-84d5-0ce89b9eeb84.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.subscription__block1 .subscription__titile{
+    color: #ffffff;
+    font-size: 14px;
+    position: relative;
+    top: 20px;
+    left: 290px;
+}
+.subscription__block2 .subscription__titile{
+    color: #ffffff;
+    font-size: 14px;
+    position: relative;
+    top: 20px;
+    left: 90px;
+}
+.subscription__block1  .subscription__text{
+    color: #ffffff;
+    font-size: 26px;
+    width: 550px;
+    line-height: 1.6;
+    position: relative;
+    top: -30px;
+    left: 290px;
+}
+.subscription__block2 .subscription__text{
+    color: #ffffff;
+    font-size: 26px;
+    width: 550px;
+    line-height: 1.6;
+    position: relative;
+    top: -30px;
+    left: 90px;
+}
+.subscription__block1 .subscription__button{
+    position: relative;
+    top: -30px;
+    left: 290px;
+    width: 130px;
+    height: 40px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .7s;
+
+}
+.subscription__block2 .subscription__button{
+    position: relative;
+    top: -30px;
+    left: 90px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .7s;
+
+}
+.subscription__button:hover{
+    cursor: pointer;
+    background: #5000e2;
+    transition: .7s;
+}
+
+
+/* ================= Why FutureLearn? ======================= */
+
+.main-page__why{
+    position: relative;
+    width: 100vw;
+    height: 310px;
+}
+.why__title{
+    position: relative;
+    top: 30px;
+    left: 750px;
+    color: #3a343a;
+}
+.why__block{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 60px;
+    position: relative;
+    top: 40px;
+}
+.why__list{
+    position: relative;
+    left: 300px;
+
+}
+.list__icon svg{
+    fill: #3a343a;
+    width: 35px;
+}
+.list__title{
+    font-size: 21px;
+    margin-top: 25px;
+    color: #3a343a;
+}
+.list__text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Europa', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* ================= Explore top subjects ======================= */
+
+.main-page__sub{
+    width: 100vw;
+    height: 400px;
+}
+.sub__title{
+    position: relative;
+    top: 30px;
+    left: 750px;
+    color: #3a343a;
+}
+.sub__block{
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 30px;
+    position: relative;
+    top: 40px;
+}
+.sub__list1{
+    position: relative;
+    left: 300px;
+    background-image:url("https://ugc.futurelearn.com/uploads/images/67/5e/675ec0f4-ac8e-49ec-adb4-f810c6ef2b5a.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .8s; 
+    overflow: hidden;
+}
+.sub__list1:hover, .sub__list2:hover, .sub__list3:hover{
+    background-size: 175%;
+    transform: scale(1.01);
+
+}
+.sub__list2{
+    position: relative;
+    left: 300px;
+    background-image:url("https://ugc.futurelearn.com/uploads/images/fd/79/fd7932c2-abbe-4efc-ab69-11f73f15289b.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .8s; 
+    overflow: hidden;
+}
+.sub__list3{
+    position: relative;
+    left: 300px;
+    background-image:url("https://ugc.futurelearn.com/uploads/images/b4/71/b47183c7-8671-4e65-bdba-4e27ae47f752.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .8s; 
+    overflow: hidden;
+}
+.sub-list__icon svg{
+    width: 37px;
+    position: relative;
+    top: 20px;
+    left: 170px;
+    fill: white;
+}
+.sub-list__title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.sub__button{
+    position: relative;
+    top: 80px;
+    left: 815px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #de00a5;
+    background: transparent;
+    color: #de00a5;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .7s;
+
+}
+.sub__button:hover{
+    cursor: pointer;
+    color: #5000e2;
+    border: 1px solid #5000e2;
+    transition: .7s;
+}
+
+
+
+/* ==================== Explore featured courses ======================= */
+
+.main-page__featcourse{
+    position: relative;
+    top: -30px;
+    width: 100vw;
+    height: 500px;
+}
+.featcourses__title{
+    position: relative;
+    top: -30px;
+    left: 700px;
+    color: #3a343a;
+}
+.featcourse__base{
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    gap: 35px;
+    position: relative;
+    left: 300px;
+    top: -20px;
+}
+.featcourse__block{
+    height: 440px;
+    background: rgb(253, 248, 248);
+}
+.block__head{
+    position: absolute;
+    background: #de00a5;
+    width: 220px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.block__image img{
+    width: 275px;
+    display: block;
+    transition: 1s;
+}
+.block__image {
+    display: inline-block;
+    overflow: hidden;
+}
+.block__text1{
+    position: relative;
+    left: 13px;
+    top: 14px;
+    line-height: 1.3;
+    color: rgb(109, 114, 119);
+    font-size: 15.5px;
+}
+.block__text2{
+    width: 230px;
+    position: relative;
+    left: 13px;
+    line-height: 1.5;
+    color: rgb(63, 63, 63);
+    font-size: 20px;
+    font-weight: 600;
+}
+.block__reviews{
+    position: relative;
+    left: 13px;
+    top: -8px;
+}
+.block__reviews2{
+    position: relative;
+    left: 13px;
+    top: -14px;
+}
+.block__reviews3{
+    position: relative;
+    left: 13px;
+    top: 3px;
+}
+.block__reviews svg{
+    width: 20px;
+    position: relative;
+    fill: rgb(255, 187, 0);
+}
+.block__reviews2 svg{
+    width: 20px;
+    position: relative;
+    fill: rgb(255, 187, 0);
+}
+.block__reviews3 svg{
+    width: 20px;
+    position: relative;
+    fill: rgb(255, 187, 0);
+}
+.reviews__img1{
+    position: relative;
+    top: 6px;
+}
+.block__button{
+    background: #de00a5;
+    color: #ffffff;
+    border: 0;
+    width: 230px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    transition: .7s;
+}
+.block__buttonl{
+    background: #de00a5;
+    color: #ffffff;
+    border: 0;
+    width: 230px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: 33px;
+    left: 23px;
+    transition: .7s;
+}
+
+.block__buttonl:hover, .block__button:hover{
+    background: #5000e2;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.featcourse__block:hover{
+    background: #f0efef;
+    transition: .5s;
+    cursor: pointer;
+    transition: .7s;
+}
+.block__image:hover{
+    transform: scale(1.01);
+    transition: .7s;
+
+}
+.courses__button{
+    position: relative;
+    top: 0px;
+    left: 770px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #de00a5;
+    background: transparent;
+    color: #de00a5;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .7s;
+}
+.courses__button:hover{
+    cursor: pointer;
+    color: #5000e2;
+    border: 1px solid #5000e2;
+    transition: .7s;
+}
+
+/* ======================================================================== */
+.line_horizontal{
+    border-bottom: 1px solid #f3e8e8;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.services-section {
+    position: relative;
+	margin: 50px 0 40px 0;
+}
+
+.services {
+    font-family: "Europa","Helvetica Neue" ,"Arial",sans-serif;
+    padding: 0 160px 0 160px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(5, 200px);
+    align-items: stretch;
+    line-height: 1.5;
+    position: relative;
+    top: 30px;
+    left: 180px;
+    margin-bottom: 70px;
+}
+
+.services__inFirst {
+    margin-bottom: 8px;
+    color: #de00a5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.services__inSecond {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #3a343a;
+}
+
+.services__inFirst:hover{
+    color: #5000e2;
+    transition: .7s;
+}
+
+.newSletter-section {
+    height: 180px;
+	padding: 32px;
+	background-color: #ededee;
+}
+
+.newSletter {
+    margin:0 135.75px 0 135.75px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: stretch;
+    line-height: 1.5;
+}
+
+.newSletter__text-module-main {
+    line-height: 1.8;
+    font-size: 25px;
+    font-weight: 600;
+    color:  #4a4d55;
+    position: relative;
+    left: 140px;
+    top: 20px;
+    }
+
+.newSletter__text-module-1{
+    position: relative;
+    top: 22px;
+    width: 550px;
+}
+.newSletter__text-module-2 {
+    position: relative;
+    top: 28px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.newSletter__text-module-3b {
+    cursor: pointer;
+    border:0;
+    background-color: #de00a5;
+    color:white;
+    width: 220px;
+    height: 36.8px;
+    position: relative;
+    top: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .7s;
+
+}
+
+.newSletter__text-module-3b:hover{
+    cursor: pointer;
+    background: #5000e2;
+    transition: .7s;
+}
+
+
+.spaceAdditionalAllSection {
+	padding: 30px;
+	background-color: #4a4d55;;
+	color:#FFFFFF;
+}
+
+.spaceAdditional {
+    position: relative;
+    left: 290px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(6, 145px);
+    align-items: stretch;
+}
+
+.spaceAdditional__col > ul{
+    list-style-type: none;
+    /* text-align: left; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.spaceAdditional__col li{
+    font-family: "Europa",Helvetica Neue,Arial,sans-serif;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+li > a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.spaceAdditional__col_title {
+    margin-bottom: 16px;
+}
+
+li > a:hover {
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+/* footer section */
+.footer-section {
+	background-color: #443a3a;
+	height: 130px;
+}
+.footer {
+    margin: 0 129.938px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    position: relative;
+    top: 40px;
+    left: 170px;
+	display: flex;
+	flex-direction: row;
+}
+.footer__icons_item > img {
+	filter: brightness(1) invert(1);
+}
+
+.footer__icons_item {
+	margin: 0.5rem;
+}
+
+.footer__emblema_futureLearn {
+    position: relative;
+    top: 40px;
+    right: 180px;
+}
+
+
+
+/* ==================SECOND PAGE STYLE================== */
+
+.main-page__allsub{
+    width: 100vw;
+}
+.allsub__title{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.allsub__text{
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+}
+.allsub__text2{
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    text-align: center;
+}
+.allsub__text3{
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    text-align: center;
+}
+.allsub__base{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -5px;
+    width: 1200px;
+    display: flex;
+    flex-flow: wrap;
+}
+.base__blocks{
+    border: 1px solid rgb(255, 255, 255);
+    width: 260px;
+    height: 170px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+.blocks__icon svg{
+    fill: white;
+    width: 44px;
+    position: relative;
+    top: 27px;
+    left: 107px;
+}
+.blocks__title{
+    color:white;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 21px;
+    line-height: 1.3;
+    width: 220px;
+    text-align: center;
+}
+
+.base__blocks.img{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/79/ad/79ad01cf-a0f0-47b5-8129-7f975daa2911.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img2{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/ea/1b/ea1b2364-2b6c-47be-bd13-88d8ffecf1cd.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img3{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/f1/d8/f1d8af0f-eda7-4355-977f-f7b94df32127.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img4{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/c4/45/c445dbe1-45c4-45e4-8f2e-c03030782ac4.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img5{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/df/c4/dfc4fad4-e042-4f85-9266-d1f967ca87bd.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img6{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/d7/1a/d71a3bfb-5d15-4829-b785-53e602d53a48.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img7{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/bd/fd/bdfd726a-f347-445a-bcb5-8aa576a99c78.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img8{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/d7/7d/d77df0bf-4f3d-46e3-b77c-b4ec767ba35a.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img9{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/ee/d7/eed784b5-66e7-4d23-a7c8-cb24a34c7210.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img10{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/e0/80/e0807c86-9046-41e6-8980-181916d0f84e.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img11{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/95/b9/95b97a10-9898-4d5b-a025-3279cce341ff.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img12{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/05/f9/05f9ea30-473b-43ed-adcb-e2ed3b2457ab.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img13{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/c9/ba/c9ba018b-ce49-4425-bebf-efe3042a6701.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .6s; 
+    overflow: hidden;
+}
+.base__blocks.img14{
+    background-image: url("https://ugc.futurelearn.com/uploads/images/62/25/6225c34b-e411-4ce0-b23b-390dafad517c.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition:  .6s; 
+    overflow: hidden;
+}
+
+.base__blocks.img:hover, .base__blocks.img2:hover, .base__blocks.img3:hover, .base__blocks.img4:hover, .base__blocks.img5:hover, 
+.base__blocks.img6:hover, .base__blocks.img7:hover, .base__blocks.img8:hover, .base__blocks.img9:hover, .base__blocks.img10:hover, 
+.base__blocks.img11:hover, .base__blocks.img12:hover, .base__blocks.img13:hover, .base__blocks.img14:hover{
+    transform: scale(1.02);
+}
+.browse__button{
+    position: relative;
+    top: 10px;
+    left: 820px;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #de00a5;
+    background: transparent;
+    color: #de00a5;
+    font-size: 12px;
+    font-weight: 800;
+    transition: .7s;
+}
+
+.browse__button:hover{
+    cursor: pointer;
+    color: #5000e2;
+    border: 1px solid #5000e2;
+    transition: .7s;
+}
+
+/* ==================Career advice================== */
+
+.main-page__career{
+    background: linear-gradient(#de00a5,#8700cd);
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    bottom: -30px;
+}
+.career__block{
+    background-image: url("https://assets.futurelearn.com/packs/app/assets/images/career-advice/people-large-779f8528fc727f9359fefa10421b05f2.png");
+    background-size: 55%;
+    background-position: 103% 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+}
+.career__title{
+    position: relative;
+    top: 80px;
+    left: 410px;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+.career__text{
+    position: relative;
+    top: 100px;
+    left: 410px;
+    width: 420px;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    color: white;
+}
+.career__button{
+    position: absolute;
+    top: 290px;
+    left: 410px;
+    width: 167px;
+    height: 38px;
+    background: transparent;
+    border: 1.5px solid white;
+    color: white;
+    font-weight: 700;
+    transition: .7s;
+}
+.career__button:hover{
+    cursor: pointer;
+    background: #5000e2;
+    border: #5000e2;
+    transition: .7s;
+}

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FutureLearn</title>
+	<link rel="stylesheet" href="styleSign.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://assets.futurelearn.com/packs/app/assets/images/favicon-fa8a2c224a848f933e60d4b730435649.ico" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-57x57-7876d097e22b2bedaf6f350171bb4418.png" sizes="57x57" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-114x114-8004283dd99c6f7e10c939c96c0071b5.png" sizes="114x114" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-72x72-be4d535ab60c93ce5082c663e12008e6.png" sizes="72x72" />
+	<link rel="apple-touch-icon" type="image/png" href="https://assets.futurelearn.com/packs/app/assets/images/apple-touch-icon-144x144-84c78958c65a66907156cf9eba1fd6e1.png" sizes="144x144" />
+</head>
+<body>
+	<div class="" id="main">
+		<!-- logo -->
+		<div class="add">
+			<div class="line__logo"><a href="index.html"><img src="https://assets.futurelearn.com/packs/app/assets/images/fl_logo-f9d7f37a61915a2fbf8a26cbb285fed0.svg" alt="FutureLearn" class="logo"></a></div>
+		</div>
+		<!-- all -->
+
+		<div class="partSignIn">
+			<div class="requiredCaution" id="vError">
+				<div class="requiredCaution-section">
+					<div class="requiredCaution__icon">
+						<img src="https://img.icons8.com/ios/20/000000/error--v1.png"/>
+					</div>
+					<div class="requiredCaution_text">
+						<p>We couldn’t sign you in. Check your email address and password, then try again.</p>
+					</div>
+				</div>
+				<div class="tri"> </div>
+			</div>
+			<div class="signIn"> <!-- links 2 -->
+				<div class="tosignIn"> <!-- Sign IN  -->
+					<a href="indexSign.html">Sign in</a>
+				</div>
+				<div class="toregister"> <!-- Register -->
+					<a href="indexRegister.html">Register</a>
+				</div>
+			</div>
+
+			<div class="signInWith">
+				<div class="signInWith__facebook"> <!-- Facebook -->
+					<form class="buttonTo" method="post" action="">
+						<button class="buttonTo__facebook" type="submit"><img src="https://img.icons8.com/material/30/000000/facebook-f.png"/><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=719488314826415&kid_directed_site=0&app_id=719488314826415&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fclient_id%3D719488314826415%26redirect_uri%3Dhttps%253A%252F%252Fwww.futurelearn.com%252Fauth%252Ffacebook%252Fcallback%26response_type%3Dcode%26scope%3Duser_age_range%252Cemail%26state%3D71e24a1a0fc3e25f67dacf76cc090c57d7eef9b3280e1840%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D158688cc-84d6-4e51-ab90-4d8915755313%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.futurelearn.com%2Fauth%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D71e24a1a0fc3e25f67dacf76cc090c57d7eef9b3280e1840%23_%3D_&display=page&locale=ru_RU&pl_dbl=0">Sign in <span class="styleWith">with </span>Facebook</a></button>
+					</form>
+				</div>
+				<div class="signInWith__google"> <!-- Google -->
+					<form class="buttonTo" method="post" action="">
+						<button class="buttonTo__google" type="submit"><img src="https://img.icons8.com/fluency/30/000000/google-logo.png"/> <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=271759304704-tg8o4lkn1j195e1uph9c3c1vdt40g3ud.apps.googleusercontent.com&prompt=select_account&redirect_uri=https%3A%2F%2Fwww.futurelearn.com%2Fauth%2Fgoogle_oauth2%2Fcallback&response_type=code&scope=email%20profile&state=66414ef214bba6ce7fe34cb6b6c42d1c6abea41584c3f6c1&flowName=GeneralOAuthFlow">Sign in <span class="styleWith">with </span>Google</a></button>
+					</form>
+				</div>
+				<div class="signInWith__organisation"> <!-- organisation -->
+					<a class="signInWith__orgLink" href="https://www.futurelearn.com/sign-in/find-organisation">Sign in with your organisation</a>
+				</div>
+			</div>
+
+			<div class="divider-section"> <!-- LINE OR -->
+				<div class="divider" title="Or">
+				</div>
+			</div>
+
+			<form class="form" id="form" action="index.html" method="post">
+				<div class="inForm">
+					<div class="inForm__email-section">
+						<label class="inForm__labelText" for="email">Email</label>
+            <input id="email" class="inForm__input email" type="email" name="email">
+					</div>
+					<div class="inForm__password-section">
+						<label class="inForm__labelText" for="password">Password</label>
+            <input id="password" class="inForm__input password" type="password" name="password">
+					</div>
+					<div class="inForm__forgotPass-section">
+						<a href="https://www.futurelearn.com/password-reset/new" class="linkPassword" id="forgotPasLink">Forgot your password?</a>
+					</div>
+					<div class="inForm__checkbox-section">
+						<label class="inForm__checkbox" for="checkboxInput">
+							<input type="checkbox" name="remember_me" value="1" id="checkboxInput" class="inform__checkboxInput"/>
+							<span class="checkboxSpan">Remember me</span>
+						</label>
+					</div>
+					<div class="inForm__signIn-button">
+						<button class="inform__button" type="button" onclick="add()" name="button"> <span class="inform__buttonSpan">Sign in</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="javaSign.js"></script>
+</body>
